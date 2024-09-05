@@ -1,0 +1,65 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    body {
+        width: 100%;
+        color: #069;
+        text-align: center;
+        min-height: 100vh;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        width: 50%;
+        overflow-y: scroll;
+        height: 90vh;
+        padding: 15px 2%;
+        box-shadow: 0 0 5px #069;
+    }
+    
+    .container::-webkit-scrollbar {
+        width: 14px;
+        border: 1px solid #069;
+    }
+    
+    .container::-webkit-scrollbar-thumb {
+        background-color: #069;
+        border-radius: 6px;
+    }
+    
+    .hr_dados1 {
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 5px;
+        overflow: visible;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .hr_dados1::after {
+        content: "VICTOR CHEVALIER LOPES";
+        font-size: 1.4em;
+        padding: 0 0.3em;
+        top: -0.7em;
+        background: #fff;
+        display: inline;
+        position: relative;
+    }
+    
+    .hr_01 {
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 3px;
+        overflow: visible;
+        padding: 0;
+        text-align: center;
+    }
+</style>

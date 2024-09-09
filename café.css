@@ -1,0 +1,255 @@
+/* Garante que a imagem de fundo cubra toda a página */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://s2.glbimg.com/dNMWgzqX4p-9cpXRSi6i87XOhRE=/smart/e.glbimg.com/og/ed/f/original/2014/04/14/lazer_birdsong_cafe_mumbai_01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #e0e0e0;
+    /* Cor do texto padrão em tema escuro */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Contêiner com largura máxima e centralizado */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    /* Adiciona box-sizing para garantir que padding e border não aumentem a largura total */
+}
+
+
+/* Header */
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo escuro com opacidade para o header */
+    color: #e0e0e0;
+    /* Cor do texto no header */
+    padding: 20px 0;
+    text-align: center;
+    background-image: url('https://vipzinho.com.br/wp-content/uploads/2023/07/lugano-sbc-vipzinho-17-750x465.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* Título do header */
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.2em;
+}
+
+
+/* Navegação */
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+
+/* Seções principais */
+
+.section {
+    padding: 20px;
+    color: #e0e0e0;
+    /* Cor do texto das seções */
+}
+
+
+/* Menu Section */
+
+.menu-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo escuro semitransparente para a seção do menu */
+    padding: 20px 0;
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    color: #f4c542;
+    /* Cor do título da seção do menu */
+    margin-bottom: 20px;
+}
+
+
+/* Layout Grid para os itens do menu */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Ajusta o número de colunas automaticamente */
+    gap: 20px;
+    /* Espaçamento entre os itens do grid */
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Coluna para a imagem e coluna para o texto */
+    gap: 15px;
+    /* Espaço entre a imagem e o texto */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo escuro para os itens do menu */
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    align-items: center;
+    /* Alinha a imagem e o texto verticalmente */
+    width: 100%;
+    /* Garantia que os itens ocupem a largura completa */
+}
+
+.menu-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.menu-item p {
+    margin: 10px 0 0;
+    /* Espaço superior e inferior da descrição */
+    text-align: left;
+    /* Alinha a descrição do item à esquerda */
+}
+
+
+/* Galeria */
+
+.gallery {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo escuro semitransparente para a galeria */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    color: #f4c542;
+    /* Cor do título da galeria */
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+
+/* Localização */
+
+.location {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo escuro para a localização */
+    text-align: center;
+    padding: 20px;
+}
+
+.location a {
+    color: #f4c542;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.location a:hover {
+    color: #e0e0e0;
+}
+
+
+/* Contato */
+
+.contact {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo escuro para o contato */
+    text-align: center;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #f4c542;
+    /* Cor do título do contato */
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #6f4f28;
+    /* Cor marrom para o fundo do footer */
+    color: #e0e0e0;
+    /* Cor do texto no footer */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Ajustes de Responsividade */
+
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        /* Ajusta o número de colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-container {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        /* Ajusta o número de colunas em telas muito pequenas */
+    }
+}

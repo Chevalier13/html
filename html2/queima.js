@@ -1,0 +1,90 @@
+    // Toggle navigation menu for mobile
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('nav ul');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Dark mode toggle
+    const darkModeToggle = document.querySelector('.dark-mode-toggle');
+    const body = document.querySelector('body');
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+    });
+
+    // Smooth scroll to sections
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Form validation
+    // Validação do formulário no rodapé
+    const footerForm = document.getElementById('footer-contact-form');
+    footerForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const footerName = document.getElementById('footer-name').value.trim();
+        const footerEmail = document.getElementById('footer-email').value.trim();
+        const footerMessage = document.getElementById('footer-message').value.trim();
+
+        if (!footerName || !footerEmail || !footerMessage) {
+            alert('Preencha todos os campos.');
+            return;
+        }
+
+        if (!validateEmail(footerEmail)) {
+            alert('E-mail inválido.');
+            return;
+        }
+
+        alert('Mensagem enviada com sucesso!');
+        footerForm.reset();
+    });
+
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    // Chart.js - Impact chart
+    const ctx = document.getElementById('impactChart').getContext('2d');
+    const impactChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Desmatamento', 'Poluição do Ar', 'Perda de Habitats', 'Crise de Saúde Pública'],
+            datasets: [{
+                label: 'Impactos das Queimadas',
+                data: [85, 75, 60, 55],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });

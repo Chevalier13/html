@@ -1,12 +1,10 @@
-    // Toggle navigation menu for mobile
+  
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('nav ul');
 
     navToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
     });
-
-    // Dark mode toggle
     const darkModeToggle = document.querySelector('.dark-mode-toggle');
     const body = document.querySelector('body');
 
@@ -14,7 +12,6 @@
         body.classList.toggle('dark-mode');
     });
 
-    // Smooth scroll to sections
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -26,8 +23,6 @@
         });
     });
 
-    // Form validation
-    // Validação do formulário no rodapé
     const footerForm = document.getElementById('footer-contact-form');
     footerForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -56,7 +51,7 @@
         return re.test(String(email).toLowerCase());
     }
 
-    // Chart.js - Impact chart
+   
     const ctx = document.getElementById('impactChart').getContext('2d');
     const impactChart = new Chart(ctx, {
         type: 'bar',

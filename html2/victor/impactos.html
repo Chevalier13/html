@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impactos das Queimadas</title>
+    <link rel="stylesheet" href="queima.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            position: relative;
+        }
+        .chart-image {
+            position: absolute;
+            width: 80%; /* Aumentar o tamanho da imagem */
+            height: auto;
+            opacity: 0.8; /* Ajustar a opacidade para melhorar a nitidez */
+            pointer-events: none; /* Permitir que o canvas receba eventos */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Queimadas</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="impactos.html">Impactos</a></li>
+                <li><a href="prevencao.html">Prevenção</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="impactos" class="info-section">
+            <h2>Impactos das Queimadas</h2>
+            <div class="chart-container">
+                <canvas id="impactChart"></canvas>
+                <img src="https://wribrasil.org.br/sites/default/files/uploads/grafico-queimadas-ipam1_0.jpg" alt="Gráfico" class="chart-image">
+            </div>
+            <p>As queimadas geram impactos ambientais e sociais severos, destruindo habitats, afetando a qualidade do ar e prejudicando a saúde pública. Fazer uma queimada sem controle pode causar sérios prejuízos à fauna e à flora, reduzindo a cobertura vegetal, diminuindo a fertilidade do solo e comprometendo a qualidade do ar e, consequentemente, a saúde humana, provocando vários tipos de doenças, principalmente respiratórias.
+                Segundo o diretor de Biodiversidade e Áreas Protegidas do Naturatins, Antônio Santiago, a prática de se fazer queimada é uma questão cultural, que acontece há milhares de anos, mas que a população pode fazer a sua parte tomando atitudes simples como não colocar fogo no lixo doméstico e fazer aceiros ao realizar queimas em áreas rurais para preparo de solo para plantio, atividade que deve ter autorização ambiental. 'O principal problema das queimadas é que elas podem acabar com a biodiversidade, matando plantas, animais e os microorganismos fundamentais para o equilíbrio ecológico', alertou o diretor.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-social">
+            <h3>Nos Siga</h3>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111392.png" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Todos os direitos reservados. | <a href="https://github.com/Chevalier13" target="_blank" class="footer-link">Victor Chevalier</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="queima.js"></script>
+</body>
+</html>

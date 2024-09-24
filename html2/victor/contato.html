@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="queima.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 120px); 
+            padding: 20px;
+        }
+
+        section#contato {
+            background: #f1f1f1;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 600px; 
+            text-align: center;
+        }
+
+        footer {
+            background: #444; 
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Queimadas</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="impactos.html">Impactos</a></li>
+                <li><a href="prevencao.html">Prevenção</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contato" class="info-section">
+            <h2>Fale Conosco</h2>
+            <form id="footer-contact-form">
+                <input type="text" id="footer-name" name="name" placeholder="Seu nome" required>
+                <input type="email" id="footer-email" name="email" placeholder="Seu e-mail" required>
+                <textarea id="footer-message" name="message" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-social">
+            <h3>Nos Siga</h3>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111392.png" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            </div>
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Todos os direitos reservados. | <a href="https://github.com/Chevalier13" target="_blank" class="footer-link">Victor Chevalier</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="queima.js"></script>
+</body>
+</html>
